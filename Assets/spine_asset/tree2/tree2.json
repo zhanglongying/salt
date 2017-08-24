@@ -1,0 +1,152 @@
+{
+"skeleton": { "hash": "lIiq3bmQxZYJ+qNyVoHeMw82aKU", "spine": "3.6.36", "width": 353.78, "height": 418.28, "images": "" },
+"bones": [
+	{ "name": "root", "rotation": 101.2 },
+	{ "name": "trunk1", "parent": "root", "length": 110.51, "rotation": -8.6, "x": 10.35, "y": 6.39 },
+	{ "name": "leaf1", "parent": "trunk1", "length": 102.15, "rotation": 34.14, "x": 124.46, "y": -11.02 },
+	{ "name": "leaf2", "parent": "trunk1", "length": 120.24, "rotation": -24.31, "x": 114.68, "y": -29.04 }
+],
+"slots": [
+	{ "name": "trunk3", "bone": "leaf2", "attachment": "trunk2" },
+	{ "name": "leaf2", "bone": "leaf2", "attachment": "leaf2" },
+	{ "name": "trunk2", "bone": "trunk1", "attachment": "trunk1" },
+	{ "name": "leaf1", "bone": "leaf1", "attachment": "leaf1" }
+],
+"skins": {
+	"default": {
+		"leaf1": {
+			"leaf1": { "x": 140.27, "y": -18.77, "rotation": -114.33, "width": 211, "height": 267 }
+		},
+		"leaf2": {
+			"leaf2": { "x": 140.98, "y": 0.28, "rotation": -77.21, "width": 140, "height": 177 }
+		},
+		"trunk2": {
+			"trunk1": { "x": 77.66, "y": -9.23, "rotation": -92.06, "width": 56, "height": 189 }
+		},
+		"trunk3": {
+			"trunk2": { "x": 63.54, "y": 3.26, "rotation": -70.35, "width": 66, "height": 172 }
+		}
+	}
+},
+"animations": {
+	"cut": {
+		"bones": {
+			"trunk1": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.1667, "angle": 18.97 },
+					{ "time": 0.6667, "angle": 0 }
+				]
+			},
+			"leaf1": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1667, "angle": 11.91 },
+					{ "time": 0.6667, "angle": 0 }
+				]
+			},
+			"leaf2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1667, "angle": 6.17 },
+					{ "time": 0.6667, "angle": 0 }
+				]
+			}
+		}
+	},
+	"cut_i": {
+		"bones": {
+			"trunk1": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.1667, "angle": -7.66 },
+					{ "time": 0.6667, "angle": 0 }
+				]
+			}
+		}
+	},
+	"die": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1667, "angle": -276.36 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.1667, "x": -1.33, "y": 15.67 }
+				]
+			},
+			"leaf1": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1667, "angle": -52.45 },
+					{ "time": 0.5, "angle": -28.72, "curve": "stepped" },
+					{ "time": 0.8333, "angle": -28.72 }
+				]
+			},
+			"leaf2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1667, "angle": -37.87 },
+					{ "time": 0.3333, "angle": -16.5 },
+					{ "time": 0.5333, "angle": 1.99 }
+				]
+			},
+			"trunk1": {
+				"rotate": [
+					{ "time": 0.8333, "angle": 0 }
+				]
+			}
+		}
+	},
+	"die_i": {
+		"bones": {
+			"trunk1": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3333, "angle": -70.73, "curve": "stepped" },
+					{ "time": 1, "angle": -70.73 }
+				]
+			},
+			"leaf1": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{
+						"time": 0.3333,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.067, 1 ]
+					},
+					{ "time": 0.6667, "angle": -30.21 }
+				]
+			}
+		}
+	},
+	"idel": {
+		"bones": {
+			"leaf1": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1, "angle": 1.51 },
+					{ "time": 2, "angle": 0 }
+				]
+			},
+			"leaf2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1, "angle": 2.7 },
+					{ "time": 2, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}
